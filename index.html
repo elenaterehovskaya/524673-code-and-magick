@@ -187,19 +187,20 @@
   var wizardWidth = 70;
   var wizardHeight = 1.337 * wizardWidth;
 
-  function getFireballSpeed (isWindFromLeft) {
+  var getFireballSpeed = function (isWindFromLeft) {
     return  isWindFromLeft  ?  5 : 2;
-  }
+  };
 
-  function getWizardX (gameFieldWidth) {
+  var getWizardX = function (gameFieldWidth) {
     return (gameFieldWidth - wizardWidth) / 2;
-  }
+  };
 
-  function getWizardY (gameFieldHeight) {
+  var getWizardY = function (gameFieldHeight) {
     return gameFieldHeight / 3;
-  }
+  };
 </script>
 
+<script src="js/stat.js"></script>
 <script src="js/game.js"></script>
 
 </body>
